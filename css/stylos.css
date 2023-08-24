@@ -1,0 +1,74 @@
+:root{
+    --color-primary:#2EB872;
+    --color-ligth:#f8f9fa;
+    --color-dark:#343a40;
+    --color-black:#192021;
+}
+
+.carousel-item img{
+    max-height: 90vh;
+    object-fit: cover;
+    object-position: center;
+}
+.navigation{
+    position: absolute; /* pierde el espacio */
+    width: 100%;        /* debe tener altura por el avbsolute*/
+    z-index: 10;        /* el el eje z para que no se pierda*/
+    background-color: rgba(0,0,0,0.7);
+    backdrop-filter: blur(5px);
+}
+
+.card img{
+    height: 100%;
+    object-fit: cover;
+}
+.banner{
+    background-color: #343a40;
+    width: 100%;
+    background-image:linear-gradient(to left,rgba(0,0,0,.7),rgba(0,0,0,.7)), url(../img/_CRS1619.JPG);
+    background-size:cover ;
+    background-position:center ;
+    background-attachment: fixed;
+}
+.green-container{
+    background-color: var(--color-primary);
+}
+.contact-container{
+    width: 100%;
+    background-image:linear-gradient(to left,rgba(0,0,0,.1),rgba(0,0,0,.1)), url(../img/form_contact.jpg);
+}
+.button1{
+    background-color: var(--color-primary);
+    color:var(--color-ligth);
+    border: none;
+    border-radius: 5px;
+    height: 38px;
+}
+
+.nav-link::after{
+    content:'';
+    width: 0;
+    height: 3px;
+    background-color:#2EB872;
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    transition:width .5s ease-in-out;
+}
+.nav-link:hover::after{
+    width: 100%;
+}
+.footer-header {
+    background-color: var(--color-dark);
+}
+.footer-bottom{
+    background-color: var(--color-black);
+}
+.main{
+    text-align: justify;
+}
+
+.row{
+    justify-content: center;
+    align-items: center;
+}
