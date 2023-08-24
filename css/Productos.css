@@ -20,7 +20,7 @@
 .banner{
     background-color: #343a40;
     width: 100%;
-    background-image:linear-gradient(to left,rgba(0,0,0,.5),rgba(0,0,0,.5)), url(../img/_CRS1619.JPG);
+    background-image:linear-gradient(to left,rgba(0,0,0,.5),rgba(0,0,0,.5)), url(../img/CRS1619.JPG);
     background-size:cover ;
     background-position:center ;
     background-attachment: fixed;
